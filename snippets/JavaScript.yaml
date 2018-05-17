@@ -1,0 +1,8 @@
+trim uneven space indentation:
+    prefix: TrimIndent
+    find: ^((?:\ {4})*)\ {1,3}(\S)
+    replace: $1$2
+fill uneven space indentation:
+    prefix: FillIndent
+    find: ^((?:\ {4})*)\ {1,3}(\S)
+    replace: $1    $2
