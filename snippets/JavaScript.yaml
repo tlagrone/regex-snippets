@@ -8,5 +8,5 @@ fill uneven space indentation:
     replace: $1    $2
 quote reserved T-SQL column and alias names:
   prefix: QuoteReservedNamesSQL
-  find: (^|[^\[])\b(name|server_name|database_name|schema_name|object_name|type_name|schema_id|object_id|type_id|precision)\b([^\]]|$)
+  find: (^|[^\[])\b(name|server_name|database_name|schema_name|object_name|column_name|type_name|schema_id|object_id|column_id|type_id|precision|type_desc|definition|value)\b([^\]]|$)
   replace: $1[$2]$3
